@@ -1,3 +1,4 @@
 from django.contrib import admin
+from correlatives.models import Correlative
 
-# Register your models here.
+admin.site.register(Correlative)
