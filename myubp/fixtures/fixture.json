@@ -54,7 +54,7 @@
     "model": "degrees.degree",
     "pk": 1,
     "fields": {
-      "name": "Ingenieria Informatica",
+      "name": "Ingeniería Informatica",
       "approval_note": 4
     }
   },
@@ -62,7 +62,7 @@
     "model": "degrees.degree",
     "pk": 2,
     "fields": {
-      "name": "Ingenieria en Telecomunicaciones",
+      "name": "Ingeniería en Telecomunicaciones",
       "approval_note": 4
     }
   },
@@ -78,7 +78,7 @@
     "model": "degrees.degree",
     "pk": 4,
     "fields": {
-      "name": "Abogacia",
+      "name": "Abogacía",
       "approval_note": 4
     }
   },
@@ -86,7 +86,7 @@
     "model": "degrees.degree",
     "pk": 5,
     "fields": {
-      "name": "Contador Publico",
+      "name": "Contador Público",
       "approval_note": 4
     }
   },
@@ -136,6 +136,123 @@
     "fields": {
       "id_user": 5,
       "id_degree": 1
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 1,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Álgebra I",
+      "semester": 1
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 2,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Álgebra II",
+      "semester": 2
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 3,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Algoritmos y Estructura de Datos I",
+      "semester": 3
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 4,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Algoritmos y Estructura de Datos II",
+      "semester": 4
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 5,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Programación Orientada a Objetos",
+      "semester": 5
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 6,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Programación Genérica y Eventos",
+      "semester": 6
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 7,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Laboratorio IV",
+      "semester": 7
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 8,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Programación Concurrente",
+      "semester": 7
+    }
+  },
+  {
+    "model": "subjects.subject",
+    "pk": 9,
+    "fields": {
+      "id_degree": 1,
+      "subject_name": "Programación Declarativa",
+      "semester": 8
+    }
+  },
+  {
+    "model": "notes.note",
+    "pk": 1,
+    "fields": {
+      "id_user": 2,
+      "id_subject": 3,
+      "exam_note": 8
+    }
+  },
+  {
+    "model": "notes.note",
+    "pk": 2,
+    "fields": {
+      "id_user": 2,
+      "id_subject": 4,
+      "exam_note": 9
+    }
+  },
+  {
+    "model": "notes.note",
+    "pk": 3,
+    "fields": {
+      "id_user": 2,
+      "id_subject": 1,
+      "exam_note": 7
+    }
+  },
+  {
+    "model": "notes.note",
+    "pk": 4,
+    "fields": {
+      "id_user": 2,
+      "id_subject": 2,
+      "exam_note": 8
     }
   }
 ]

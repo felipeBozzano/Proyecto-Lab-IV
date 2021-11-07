@@ -22,6 +22,7 @@ class NoteViewSet(viewsets.ModelViewSet):
             return Note.objects.filter(id_user=user.id)
         return Note.objects.all()
 
+    '''
     def create(self, request, *args, **kwargs):
         """
         Allows the user to insert a note
@@ -32,3 +33,4 @@ class NoteViewSet(viewsets.ModelViewSet):
         #created = Cart.objects.create(user=user)
         #created.save()
         #return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Carrito creado con exito"})
+    '''
