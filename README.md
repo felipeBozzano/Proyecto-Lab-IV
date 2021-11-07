@@ -45,5 +45,11 @@ $ python manage.py runserver
     * user_name: benjamin@test.com
     * password: test1234
   
+## Colección Postman
+* ### Importar la siguiente colección: [MYUBP-POSTMAN-COLLECTION](https://github.com/felipeBozzano/Proyecto-Lab-IV/blob/dev/myubp/postman/MyUBP.postman_collection.json)
+* ### Importar el siguiente Environment: [MYUBP-LOCAL-ENVIRONMENT](https://github.com/felipeBozzano/Proyecto-Lab-IV/blob/dev/myubp/postman/Local.postman_environment.json)
+
+
+  
 
 
