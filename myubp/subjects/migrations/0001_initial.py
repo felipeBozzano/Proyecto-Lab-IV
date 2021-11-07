@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             name='Subject',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('signature_name', models.CharField(max_length=50, unique=True)),
+                ('subject_name', models.CharField(max_length=50)),
                 ('semester', models.IntegerField()),
                 ('id_career', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='belonging_degree', to='degrees.degree')),
             ],

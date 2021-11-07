@@ -1,5 +1,6 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.response import Response
 
 from notes.permissions import NotePermissions
 from notes.serializers import NoteSerializer
@@ -22,15 +23,14 @@ class NoteViewSet(viewsets.ModelViewSet):
             return Note.objects.filter(id_user=user.id)
         return Note.objects.all()
 
-    '''
     def create(self, request, *args, **kwargs):
         """
         Allows the user to insert a note
         """
-        #user = request.user
-        print(request.data)
-        return False
-        #created = Cart.objects.create(user=user)
-        #created.save()
-        #return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Carrito creado con exito"})
-    '''
+        user = request.user
+        subject = request.subject
+        print("id_user: {}, id_subject: {}".format(user, subject))
+        return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Lista la prueba"})
+        # created = Cart.objects.create(user=user)
+        # created.save()
+        # return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Carrito creado con exito"})
