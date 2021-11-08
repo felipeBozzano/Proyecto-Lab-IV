@@ -865,6 +865,166 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "CORRELATIVES",
+			"item": [
+				{
+					"name": "add correlative",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_subject\": 8,\n    \"correlative_subject\": 9\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/notes/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all correlative",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/correlatives/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"correlatives",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one correlative",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/correlatives/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"correlatives",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete correlative",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/correlatives/2/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"correlatives",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update correlative",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4,\n    \"id_subject\": 1,\n    \"correlative_subject\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/correlatives/1/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"correlatives",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
