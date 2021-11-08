@@ -14,7 +14,7 @@ $ python manage.py migrate
 
 ### - ***Popular tablas***
 ```
-$ python3 manage.py loaddata fixture\fixture.json
+$ python3 manage.py loaddata fixtures\fixture.json
 ```
 
 ### - ***Levantar servidor***
