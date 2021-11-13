@@ -1,4 +1,5 @@
 from rest_framework import permissions
+from users.models import UserProfile
 
 
 class NotePermissions(permissions.BasePermission):
@@ -11,11 +12,7 @@ class NotePermissions(permissions.BasePermission):
         Permissions for normal users
         """
 
-        allowed_methods = ['POST', 'GET']
-
         if not request.user.is_authenticated:
-            return False
-        if not request.user.is_superuser and request.method in allowed_methods:
             return False
         return True
 
@@ -26,8 +23,9 @@ class NotePermissions(permissions.BasePermission):
 
         allowed_methods = ['GET', 'PUT', 'DELETE']
 
+        if not request.user.is_authenticated:
+            return False
         if request.user.is_superuser:
             return True
-
         if request.method in allowed_methods:
-            return obj.id_user == request.user.id
+            return obj.id_user == UserProfile.objects.get(id=request.user.id)

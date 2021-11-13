@@ -15,9 +15,10 @@ class SubjectPermissions(permissions.BasePermission):
 
         if not request.user.is_authenticated:
             return False
-        if not request.user.is_superuser and request.method in allowed_methods:
-            return False
-        return True
+        if request.user.is_superuser:
+            return True
+        if request.method in allowed_methods:
+            return True
 
     def has_object_permission(self, request, view, obj):
         """
@@ -28,6 +29,7 @@ class SubjectPermissions(permissions.BasePermission):
 
         if not request.user.is_authenticated:
             return False
-        if not request.user.is_superuser and request.method in allowed_methods:
-            return False
-        return True
+        if request.user.is_superuser:
+            return True
+        if request.method in allowed_methods:
+            return obj.id_user == request.user.id
