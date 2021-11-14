@@ -30,19 +30,3 @@ class SubjectViewSet(viewsets.ModelViewSet):
         print("degrees: ", degrees)
 
         return Subject.objects.filter(id_degree__in=degrees)
-
-        # Obtenemos todas las materias de todas las carreras del usuario logueado
-        # subjects = []
-        # all_subjects = Subject.objects.filter(id_degree__in=degrees)
-        # for subject in all_subjects:
-            # subjects.append(subject.id)
-        # print("subjects: ", subjects)
-
-        """if not self.request.user.is_superuser:
-            print("user: ", self.request.user)
-            user_degree = UserDegree.objects.filter(id_user=self.request.user.id)
-            id_degrees = []
-            for i in user_degree:
-                id_degrees.append(i.id_degree)
-            return Subject.objects.filter(id_degree__in=id_degrees)
-        return Subject.objects.all()"""
