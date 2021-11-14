@@ -4,6 +4,8 @@ from rest_framework.authentication import TokenAuthentication
 from correlatives.permissions import CorrelativePermissions
 from correlatives.serializers import CorrelativeSerializer
 from correlatives.models import Correlative
+from users_degrees.models import UserDegree
+from subjects.models import Subject
 
 
 class CorrelativeViewSet(viewsets.ModelViewSet):
@@ -18,6 +20,28 @@ class CorrelativeViewSet(viewsets.ModelViewSet):
         """
 
         user = self.request.user
+        print("user: ", user)
+
         if not user.is_superuser:
-            return Correlative.objects.filter(id_user=user.id)
+            # Obtenemos las carreras del usuario logueado
+            user_degrees = UserDegree.objects.filter(id_user=user.id)
+            # Agregamos los degrees_name en una lista
+            degrees = []
+            for user_degree in user_degrees:
+                degrees.append(user_degree.id_degree)
+            print("degrees: ", degrees)
+
+            # Obtenemos todas las materias de todas las carreras del usuario logueado
+            subjects = []
+            all_subjects = Subject.objects.filter(id_degree__in=degrees)
+            for subject in all_subjects:
+                subjects.append(subject.id)
+            print("subjects: ", subjects)
+
+            # Obtengo todas las correlativas de todas las materias del usuario logueado
+            correlatives = []
+            all_correlatives = Correlative.objects.filter(id_subject__in=subjects)
+            for correlative in all_correlatives:
+                correlatives.append(correlative)
+            return correlatives
         return Correlative.objects.all()
