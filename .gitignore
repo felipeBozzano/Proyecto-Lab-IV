@@ -1,7 +1,1 @@
 myubp/db.sqlite3
-myubp/degrees/migrations
-myubp/correlatives/migrations
-myubp/notes/migrations
-myubp/subjects/migrations
-myubp/users/migrations
-myubp/users_degrees/migrations
