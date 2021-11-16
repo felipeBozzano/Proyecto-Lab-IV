@@ -9,5 +9,5 @@ class Correlative(models.Model):
     class Meta:
         unique_together = ('id_subject', 'correlative_subject')
 
-    def __str__(self):
-        return self.correlative_subject
+    # def __str__(self):
+    #     return self.correlative_subject
