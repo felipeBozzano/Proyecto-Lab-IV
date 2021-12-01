@@ -9,3 +9,6 @@ class Subject(models.Model):
 
     class Meta:
         unique_together = ('id_degree', 'subject_name')
+
+    def __str__(self):
+        return self.subject_name
