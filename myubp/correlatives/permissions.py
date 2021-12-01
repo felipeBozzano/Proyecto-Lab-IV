@@ -15,7 +15,7 @@ class CorrelativePermissions(permissions.BasePermission):
 
         if not request.user.is_authenticated:
             return False
-        if not request.user.is_superuser and request.method in allowed_methods:
+        if not request.user.is_superuser and request.method not in allowed_methods:
             return False
         return True
 
@@ -28,6 +28,6 @@ class CorrelativePermissions(permissions.BasePermission):
 
         if not request.user.is_authenticated:
             return False
-        if not request.user.is_superuser and request.method in allowed_methods:
+        if not request.user.is_superuser and request.method not in allowed_methods:
             return False
         return True
