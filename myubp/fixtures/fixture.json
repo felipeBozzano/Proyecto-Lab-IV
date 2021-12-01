@@ -254,5 +254,37 @@
       "id_subject": 2,
       "exam_note": 8
     }
+  },
+  {
+    "model": "correlatives.correlative",
+    "pk": 1,
+    "fields": {
+      "id_subject": 1,
+      "correlative_subject": 2
+    }
+  },
+  {
+    "model": "correlatives.correlative",
+    "pk": 2,
+    "fields": {
+      "id_subject": 3,
+      "correlative_subject": 4
+    }
+  },
+  {
+    "model": "correlatives.correlative",
+    "pk": 3,
+    "fields": {
+      "id_subject": 5,
+      "correlative_subject": 6
+    }
+  },
+  {
+    "model": "correlatives.correlative",
+    "pk": 4,
+    "fields": {
+      "id_subject": 8,
+      "correlative_subject": 9
+    }
   }
 ]
