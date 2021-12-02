@@ -1,2 +1,9 @@
+
 SECRET_KEY=django-insecure--gw)w3fc+*mf1nu0g#bj8ma3=2%lrcq9l247rryq-pq)z-6%-p
 DEBUG=1
+POSTGRES_USER=myubp
+POSTGRES_PASSWORD=myubp123
+POSTGRES_DB=myubp_db
+
+
+
