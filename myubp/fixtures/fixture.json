@@ -156,68 +156,447 @@
       "semester": 2
     }
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
+    "pk": 1,
+    "fields": {"id_degree": 1,
+               "subject_name": "Álgebra I",
+               "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 2,
+    "fields": {"id_degree": 1,
+               "subject_name": "Álgebra II",
+               "semester": 2}
+  },
+  {"model": "subjects.subject",
     "pk": 3,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Algoritmos y Estructura de Datos I",
-      "semester": 3
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Algoritmos y Estructura de Datos I",
+               "semester": 3}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 4,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Algoritmos y Estructura de Datos II",
-      "semester": 4
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Algoritmos y Estructura de Datos II",
+               "semester": 4}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 5,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Programación Orientada a Objetos",
-      "semester": 5
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Programación Orientada a Objetos",
+               "semester": 5}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 6,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Programación Genérica y Eventos",
-      "semester": 6
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Programación Genérica y Eventos",
+               "semester": 6}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 7,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Laboratorio IV",
-      "semester": 7
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Laboratorio IV",
+               "semester": 7}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 8,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Programación Concurrente",
-      "semester": 7
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Programación Concurrente",
+               "semester": 7}
   },
-  {
-    "model": "subjects.subject",
+  {"model": "subjects.subject",
     "pk": 9,
-    "fields": {
-      "id_degree": 1,
-      "subject_name": "Programación Declarativa",
-      "semester": 8
-    }
+    "fields": {"id_degree": 1,
+               "subject_name": "Programación Declarativa",
+               "semester": 8}
+  },
+  {"model": "subjects.subject",
+    "pk": 10,
+    "fields": {"id_degree": 1,
+               "subject_name": "Programación de Redes",
+               "semester": 8}
+  },
+  {"model": "subjects.subject",
+    "pk": 11,
+    "fields": {"id_degree": 1,
+               "subject_name": "Laboratorio I",
+               "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 12,
+    "fields": {"id_degree": 1,
+               "subject_name": "Laboratorio II",
+               "semester": 3}
+  },
+  {"model": "subjects.subject",
+    "pk": 13,
+    "fields": {"id_degree": 1,
+               "subject_name": "Laboratorio III",
+               "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 14,
+    "fields": {"id_degree": 1,
+               "subject_name": "Comunicacion de Datos",
+               "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 15,
+    "fields": {"id_degree": 1,
+               "subject_name": "Redes de Computadoras",
+               "semester": 6}
+  },
+  {"model": "subjects.subject",
+    "pk": 16,
+    "fields": {"id_degree": 1,
+               "subject_name": "Diseno Orientado a Objetos",
+               "semester": 7}
+  },
+  {"model": "subjects.subject",
+    "pk": 17,
+    "fields": {"id_degree": 3,
+      "subject_name": "Introduccion a la Tecnologia I",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 18,
+    "fields": {"id_degree": 3,
+      "subject_name": "Introduccion a la Tecnologia II",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 19,
+    "fields": {"id_degree": 3,
+      "subject_name": "Introduccion al Ambiente I",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 20,
+    "fields": {"id_degree": 3,
+      "subject_name": "Introduccion al Ambiente II",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 21,
+    "fields": {"id_degree": 3,
+      "subject_name": "Tecnologia I",
+      "semester": 3}
+  },
+  {"model": "subjects.subject",
+    "pk": 22,
+    "fields": {"id_degree": 3,
+      "subject_name": "Tecnologia II",
+      "semester": 4}
+  },
+  {"model": "subjects.subject",
+    "pk": 23,
+    "fields": {"id_degree": 3,
+      "subject_name": "Tecnologia III",
+      "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 24,
+    "fields": {"id_degree": 3,
+      "subject_name": "Tecnologia IV",
+      "semester": 6}
+  },
+  {"model": "subjects.subject",
+    "pk": 25,
+    "fields": {"id_degree": 3,
+      "subject_name": "Organización y Ejecución de obras",
+      "semester": 9}
+  },
+  {"model": "subjects.subject",
+  "pk": 26,
+  "fields": {"id_degree": 3,
+    "subject_name": "Control de Calidad",
+    "semester": 10}
+  },
+  {"model": "subjects.subject",
+    "pk": 27,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Civil I a",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 28,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Civil I b",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 29,
+    "fields": {"id_degree": 4,
+      "subject_name": "Informática",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 30,
+    "fields": {"id_degree": 4,
+      "subject_name": "Informática Jurídica",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 31,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Societario I",
+      "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 32,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Societario II",
+      "semester": 6}
+  },
+  {"model": "subjects.subject",
+    "pk": 33,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Procesal Penal I",
+      "semester": 7}
+  },
+  {"model": "subjects.subject",
+    "pk": 34,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Procesal Penal II",
+      "semester": 8}
+  },
+  {"model": "subjects.subject",
+    "pk": 35,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Internacional Privado I",
+      "semester": 9}
+  },
+  {"model": "subjects.subject",
+    "pk": 36,
+    "fields": {"id_degree": 4,
+      "subject_name": "Derecho Internacional Privado II",
+      "semester": 10}
+  },
+  {"model": "subjects.subject",
+    "pk": 37,
+    "fields": {"id_degree": 2,
+      "subject_name": "Álgebra I",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 38,
+    "fields": {"id_degree": 2,
+      "subject_name": "Álgebra II",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 39,
+    "fields": {"id_degree": 2,
+      "subject_name": "Electrónica I",
+      "semester": 4}
+  },
+  {"model": "subjects.subject",
+    "pk": 40,
+    "fields": {"id_degree": 2,
+      "subject_name": "Electrónica II",
+      "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 41,
+    "fields": {"id_degree": 2,
+      "subject_name": "Transmisión por Conductores",
+      "semester": 7}
+  },
+  {"model": "subjects.subject",
+    "pk": 42,
+    "fields": {"id_degree": 2,
+      "subject_name": "Transmisión por Fibra Óptica",
+      "semester": 8}
+  },
+  {"model": "subjects.subject",
+    "pk": 43,
+    "fields": {"id_degree": 2,
+      "subject_name": "Radiocomunicación I",
+      "semester": 9}
+  },
+  {"model": "subjects.subject",
+    "pk": 44,
+    "fields": {"id_degree": 2,
+      "subject_name": "Radiocomunicación II",
+      "semester": 10}
+  },
+  {"model": "subjects.subject",
+    "pk": 45,
+    "fields": {"id_degree": 5,
+      "subject_name": "Sistema de Información Contable I",
+      "semester": 1}
+  },
+  {"model": "subjects.subject",
+    "pk": 46,
+    "fields": {"id_degree": 5,
+      "subject_name": "Sistema de Información Contable ll",
+      "semester": 2}
+  },
+  {"model": "subjects.subject",
+    "pk": 47,
+    "fields": {"id_degree": 5,
+      "subject_name": "Contabilidad Intermedia I",
+      "semester": 3}
+  },
+  {"model": "subjects.subject",
+    "pk": 48,
+    "fields": {"id_degree": 5,
+      "subject_name": "Contabilidad Intermedia II",
+      "semester": 4}
+  },
+  {"model": "subjects.subject",
+    "pk": 49,
+    "fields": {"id_degree": 5,
+      "subject_name": "Diseño de Sistemas de Información Contable",
+      "semester": 5}
+  },
+  {"model": "subjects.subject",
+    "pk": 50,
+    "fields": {"id_degree": 5,
+      "subject_name": "Metodología de la Investigación Contable",
+      "semester": 6}
+  },
+  {"model": "subjects.subject",
+    "pk": 51,
+    "fields": {"id_degree": 5,
+      "subject_name": "Auditoría I",
+      "semester": 9}
+  },
+  {"model": "subjects.subject",
+    "pk": 52,
+    "fields": {"id_degree": 5,
+      "subject_name": "Auditoría II",
+      "semester": 10}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 1,
+    "fields": {"id_subject": 1,
+      "correlative_subject": 2}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 2,
+    "fields": {"id_subject": 3,
+      "correlative_subject": 4}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 3,
+    "fields": {"id_subject": 5,
+      "correlative_subject": 6}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 4,
+    "fields": {"id_subject": 8,
+      "correlative_subject": 10}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 5,
+    "fields": {"id_subject": 11,
+      "correlative_subject": 12}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 6,
+    "fields": {"id_subject": 12,
+      "correlative_subject": 13}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 7,
+    "fields": {"id_subject": 13,
+      "correlative_subject": 7}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 8,
+    "fields": {"id_subject": 14,
+      "correlative_subject": 15}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 9,
+    "fields": {"id_subject": 37,
+      "correlative_subject": 38}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 10,
+    "fields": {"id_subject": 39,
+      "correlative_subject": 40}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 11,
+    "fields": {"id_subject": 41,
+      "correlative_subject": 42}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 12,
+    "fields": {"id_subject": 43,
+      "correlative_subject": 44}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 13,
+    "fields": {"id_subject": 45,
+      "correlative_subject": 46}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 14,
+    "fields": {"id_subject": 47,
+      "correlative_subject": 48}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 15,
+    "fields": {"id_subject": 49,
+      "correlative_subject": 50}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 16,
+    "fields": {"id_subject": 51,
+      "correlative_subject": 52}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 17,
+    "fields": {"id_subject": 17,
+      "correlative_subject": 18}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 18,
+    "fields": {"id_subject": 19,
+      "correlative_subject": 20}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 19,
+    "fields": {"id_subject": 21,
+      "correlative_subject": 22}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 20,
+    "fields": {"id_subject": 23,
+      "correlative_subject": 24}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 21,
+    "fields": {"id_subject": 25,
+      "correlative_subject": 26}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 22,
+    "fields": {"id_subject": 27,
+      "correlative_subject": 28}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 23,
+    "fields": {"id_subject": 29,
+      "correlative_subject": 30}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 24,
+    "fields": {"id_subject": 31,
+      "correlative_subject": 32}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 25,
+    "fields": {"id_subject": 33,
+      "correlative_subject": 34}
+  },
+  {"model": "correlatives.correlative",
+    "pk": 26,
+    "fields": {"id_subject": 35,
+      "correlative_subject": 36}
   },
   {
     "model": "notes.note",
@@ -253,38 +632,6 @@
       "id_user": 2,
       "id_subject": 2,
       "exam_note": 8
-    }
-  },
-  {
-    "model": "correlatives.correlative",
-    "pk": 1,
-    "fields": {
-      "id_subject": 1,
-      "correlative_subject": 2
-    }
-  },
-  {
-    "model": "correlatives.correlative",
-    "pk": 2,
-    "fields": {
-      "id_subject": 3,
-      "correlative_subject": 4
-    }
-  },
-  {
-    "model": "correlatives.correlative",
-    "pk": 3,
-    "fields": {
-      "id_subject": 5,
-      "correlative_subject": 6
-    }
-  },
-  {
-    "model": "correlatives.correlative",
-    "pk": 4,
-    "fields": {
-      "id_subject": 8,
-      "correlative_subject": 9
     }
   }
 ]
