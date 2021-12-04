@@ -1,7 +1,7 @@
 from django.test import TestCase, Client
 import json
-
 from users.models import UserProfile
+
 
 class PostDegreeCase(TestCase):
 
@@ -24,7 +24,7 @@ class PostDegreeCase(TestCase):
 
         """Create a new degree using the degree API"""
         self.new_degree = self.browser.post('/api/degrees/', {'name': 'Degree',
-                                                            'approval_note': 5}, HTTP_AUTHORIZATION=token)
+                                                              'approval_note': 5}, HTTP_AUTHORIZATION=token)
 
         '''Convert byte object to string'''
         self.string_new_degree = self.new_degree.content.decode("utf-8").replace("'", '"')
@@ -40,7 +40,7 @@ class PostDegreeCase(TestCase):
         # Get all the degrees
         selected_degree = self.browser.get('/api/degrees/', content_type="application/json")
 
-        # Convert byte_loged_user object to string_user
+        # Convert byte_degree object to string_degree
         string_degree = selected_degree.content.decode("utf-8").replace("'", '"')
 
         # Convert string to dict

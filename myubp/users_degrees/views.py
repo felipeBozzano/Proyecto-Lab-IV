@@ -7,6 +7,23 @@ from users_degrees.models import UserDegree
 
 
 class UserDegreeViewSet(viewsets.ModelViewSet):
+    """
+        # UserDegree API
+        list:
+            ## All UserDegree
+            ***If the logged user is superuser then list al UserDegree. Otherwise list logged user's UserDegree***
+
+        create:
+            ## Create UserDegree
+            ***Allows to create a new UserDegree.
+            You will need the following body: ***
+            ```
+                {
+                    "id_user": 4,
+                    "id_degree": 1
+                }
+            ```
+    """
     queryset = UserDegree.objects.all()
     serializer_class = UserDegreeSerializer
     authentication_classes = (TokenAuthentication,)

@@ -7,7 +7,7 @@ class CorrelativeSerializer(serializers.ModelSerializer):
     Serializes a Note object
     """
 
-    # serializamos los id por sus to_string
+    # serialize id_subject and correlative_subject with __str__ class method
     id_subject = serializers.StringRelatedField()
     correlative_subject = serializers.StringRelatedField()
 

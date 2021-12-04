@@ -11,5 +11,6 @@ class Note(models.Model):
 
     @property
     def average_note(self):
-        print("avg: ", Note.objects.aggregate(Avg('exam_note')))
+        if hasattr(self, '_average_note'):
+            return self._average_note
         return Note.objects.aggregate(Avg('exam_note'))
