@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('api/v1/doc', include_docs_urls(title=MyUbp)),
     path('api/', include('users.urls')),
     path('api/', include('degrees.urls')),
     path('api/', include('users_degrees.urls')),
