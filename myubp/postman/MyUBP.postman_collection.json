@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"root\",\n    \"email\": \"root@test.com\",\n    \"password\": \"r00t1234\"\n}",
+							"raw": "{\n    \"name\": \"Bautista\",\n    \"email\": \"bautista@test.com\",\n    \"password\": \"test123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -50,13 +50,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/profile/2",
+							"raw": "{{url}}/profile/3",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"profile",
-								"2"
+								"3"
 							],
 							"query": [
 								{
@@ -105,13 +105,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/profile/2/",
+							"raw": "{{url}}/profile/3/",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"profile",
-								"2",
+								"3",
 								""
 							]
 						}
@@ -166,7 +166,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": {{root_user}},\n    \"password\": {{root_pass}}\n}",
+							"raw": "{\n    \"username\": \"bautista@test.com\",\n    \"password\": \"test1234\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -858,6 +858,30 @@
 							"path": [
 								"notes",
 								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "avg",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/notes-avg/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notes-avg",
 								""
 							]
 						}

@@ -51,6 +51,16 @@
     }
   },
   {
+    "model": "users.userprofile",
+    "pk": 6,
+    "fields": {
+      "email": "bautista@test.com",
+      "name": "Bautista Olmos",
+      "is_staff": false,
+      "password": "pbkdf2_sha256$260000$LIQXGB082ReRj540eVHPOw$W5KLwVWkVmb3DKZ5ZPdb1TIUEBa/crr7fPQjxT8Nrr0="
+    }
+  },
+  {
     "model": "degrees.degree",
     "pk": 1,
     "fields": {
@@ -598,40 +608,100 @@
     "fields": {"id_subject": 35,
       "correlative_subject": 36}
   },
-  {
-    "model": "notes.note",
+  {"model": "notes.note",
     "pk": 1,
-    "fields": {
-      "id_user": 2,
+    "fields": {"id_user": 2,
       "id_subject": 3,
-      "exam_note": 8
-    }
+      "exam_note": 8}
   },
-  {
-    "model": "notes.note",
+  {"model": "notes.note",
     "pk": 2,
-    "fields": {
-      "id_user": 2,
+    "fields": {"id_user": 2,
       "id_subject": 4,
-      "exam_note": 9
-    }
+      "exam_note": 9}
   },
-  {
-    "model": "notes.note",
+  {"model": "notes.note",
     "pk": 3,
-    "fields": {
-      "id_user": 2,
+    "fields": {"id_user": 2,
       "id_subject": 1,
-      "exam_note": 7
-    }
+      "exam_note": 7}
   },
-  {
-    "model": "notes.note",
+  {"model": "notes.note",
     "pk": 4,
-    "fields": {
-      "id_user": 2,
+    "fields": {"id_user": 2,
       "id_subject": 2,
-      "exam_note": 8
-    }
+      "exam_note": 8}
+  },
+  {"model": "notes.note",
+    "pk": 5,
+    "fields": {"id_user": 3,
+      "id_subject": 5,
+      "exam_note": 8}
+  },
+  {"model": "notes.note",
+    "pk": 6,
+    "fields": {"id_user": 3,
+      "id_subject": 6,
+      "exam_note": 10}
+  },
+  {"model": "notes.note",
+    "pk": 7,
+    "fields": {"id_user": 3,
+      "id_subject": 14,
+      "exam_note": 7}
+  },
+  {"model": "notes.note",
+    "pk": 8,
+    "fields": {"id_user": 3,
+      "id_subject": 15,
+      "exam_note": 10}
+  },
+  {"model": "notes.note",
+    "pk": 9,
+    "fields": {"id_user": 4,
+      "id_subject": 1,
+      "exam_note": 10}
+  },
+  {"model": "notes.note",
+    "pk": 10,
+    "fields": {"id_user": 4,
+      "id_subject": 11,
+      "exam_note": 9}
+  },
+  {"model": "notes.note",
+    "pk": 11,
+    "fields": {"id_user": 4,
+      "id_subject": 16,
+      "exam_note": 8}
+  },
+  {"model": "notes.note",
+    "pk": 12,
+    "fields": {"id_user": 4,
+      "id_subject": 13,
+      "exam_note": 10}
+  },
+  {"model": "notes.note",
+    "pk": 13,
+    "fields": {"id_user": 5,
+      "id_subject": 3,
+      "exam_note": 8}
+  },
+  {"model": "notes.note",
+    "pk": 14,
+    "fields": {"id_user": 5,
+      "id_subject": 4,
+      "exam_note": 8}
+  },
+  {"model": "notes.note",
+    "pk": 15,
+    "fields": {"id_user": 5,
+      "id_subject": 8,
+      "exam_note": 9}
+  },
+  {"model": "notes.note",
+    "pk": 16,
+    "fields": {"id_user": 5,
+      "id_subject": 6,
+      "exam_note": 7}
   }
 ]

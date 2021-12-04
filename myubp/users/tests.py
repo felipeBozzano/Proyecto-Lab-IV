@@ -1,10 +1,8 @@
 from django.test import TestCase, Client
 import json
 
-from users.models import UserProfile
 
-
-class ProductTest(TestCase):
+class UserTest(TestCase):
 
     def setUp(self):
         self.browser = Client()

@@ -63,29 +63,6 @@ $ python manage.py runserver
   $ python manage.py dumpdata app.model_name
 ```
 
-## How to delete tables from database from postgresql client
-
-```
-  begin
-    drop table myubp.public.django_migrations;
-    drop table myubp.public.django_admin_log;
-    drop table myubp.public.auth_group_permissions;
-    drop table myubp.public.users_userprofile_groups;
-    drop table myubp.public.auth_group;
-    drop table myubp.public.notes_note;
-    drop table myubp.public.users_userprofile_user_permissions;
-    drop table myubp.public.auth_permission;
-    drop table myubp.public.django_content_type;
-    drop table myubp.public.authtoken_token;
-    drop table myubp.public.users_degrees_userdegree ;
-    drop table myubp.public.users_userprofile;
-    drop table myubp.public.django_session;
-    drop table myubp.public.correlatives_correlative;
-    drop table myubp.public.subjects_subject;
-    drop table myubp.public.degrees_degree;
-  end
-```
-
 
   
 
