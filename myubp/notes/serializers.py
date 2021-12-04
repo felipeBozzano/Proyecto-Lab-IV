@@ -10,3 +10,19 @@ class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Note
         fields = ['id', 'id_user', 'id_subject', 'exam_note']
+
+
+class AvgSerializer(serializers.ModelSerializer):
+    """
+    Serializes a notes AVG
+    """
+
+    average_note = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_average_note(obj):
+        return obj.average_note
+
+    class Meta:
+        model = Note
+        fields = ['average_note']

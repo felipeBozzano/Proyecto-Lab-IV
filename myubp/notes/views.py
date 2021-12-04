@@ -1,9 +1,10 @@
+from django.db.models import Avg
 from rest_framework import viewsets, status
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.response import Response
 
 from notes.permissions import NotePermissions
-from notes.serializers import NoteSerializer
+from notes.serializers import NoteSerializer, AvgSerializer
 from notes.models import Note
 from subjects.models import Subject
 from users_degrees.models import UserDegree
@@ -52,3 +53,15 @@ class NoteViewSet(viewsets.ModelViewSet):
                 return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Note inserted"})
 
         return Response(status=status.HTTP_400_BAD_REQUEST, data={"Status": "FAILED", "Message": "User not suscripted"})
+
+
+class AvgNoteViewSet(viewsets.ModelViewSet):
+    serializer_class = AvgSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (NotePermissions,)
+
+    def get_queryset(self):
+        return Note.objects.all().annotate(_average_note=Avg('exam_note'))
+
+
+
