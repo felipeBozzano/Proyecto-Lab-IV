@@ -13,23 +13,23 @@ from users.models import UserProfile
 
 class NoteViewSet(viewsets.ModelViewSet):
     """
-        # Notes API
-        list:
-            ## All Notes
-            ***List all logged user's exam notes if the logged user is not super user, otherwise list all exam notes.***
+    list:
+    ## All Notes:
+    ***List all logged user's exam notes if the logged user is not super user, otherwise list all exam notes.***
 
-        create:
-            ## Add Note
-            ****Allows the user to add notes to the subjects of his degrees. The user is not allowed to add notes
-             to degree's subjects in which he does not belong.
-             To create a new note you will need the following body: ****
-             ```
-                {
-                    "id_user": 2,
-                    "id_subject": 5,
-                    "exam_note": 6
-                }
-             ```
+    create:
+    ## Add Note
+    ****Allows the user to add notes to the subjects of his degrees. The user is not allowed to add notes
+     to degree's subjects in which he does not belong.
+     To create a new note you will need the following body: ****
+
+     ```
+        {
+            "id_user": 2,
+            "id_subject": 5,
+            "exam_note": 6
+        }
+     ```
     """
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
@@ -76,11 +76,9 @@ class NoteViewSet(viewsets.ModelViewSet):
 
 class AvgNoteViewSet(viewsets.ModelViewSet):
     """
-        # Note AVG API
-        list:
-            ## Average exam note
-            ***Return exam note's average for logged user. If the logged user is a root user, he can se all the
-             exam note's average***
+    list:
+    ## Average exam note
+    ***Return exam note's average for logged user. If the logged user is a root user, he can se all the exam note's average***
     """
     serializer_class = AvgSerializer
     authentication_classes = (TokenAuthentication,)

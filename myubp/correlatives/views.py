@@ -10,20 +10,21 @@ from subjects.models import Subject
 
 class CorrelativeViewSet(viewsets.ModelViewSet):
     """
-    # Correlatives API
     list:
-        ## All correlatives
-        ***List all user_degrees correlatives***
+    ### All correlatives:
+     ***List all user's degrees correlatives***
+
     create:
-        ## New Correlative
-           ***Only the super user can create a new Correlative
-            To create a new Degree you need the following body:***
-            ```
-                {
-                    "id_subject": 8,
-                    "correlative_subject": 9
-                }
-            ```
+    ### New Correlative:
+     ***Only the super user can create a new Correlative
+    To create a new Degree you need the following body:***
+
+    ```
+        {
+            "id_subject": 8,
+            "correlative_subject": 9
+        }
+    ```
     """
     queryset = Correlative.objects.all()
     serializer_class = CorrelativeSerializer

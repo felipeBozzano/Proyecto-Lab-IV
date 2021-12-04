@@ -13,22 +13,23 @@ from users.models import UserProfile
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     """
-        # User API
-        list:
-            ## All Users
-            ***If the logged user is superuser then list al users. Otherwise list logged user data***
+    # User API
+    list:
+    ## All Users
+    ***If the logged user is superuser then list al users. Otherwise list logged user data***
 
-        create:
-            ## Create User
-            ***Allows to create a new User.
-            You will need the following body: ***
-            ```
-                {
-                    "name": "Bautista",
-                    "email": "bautista@test.com",
-                    "password": "test123"
-                }
-            ```
+    create:
+    ## Create User
+    ***Allows to create a new User.
+    You will need the following body: ***
+
+    ```
+        {
+            "name": "Bautista",
+            "email": "bautista@test.com",
+            "password": "test123"
+        }
+    ```
     """
 
     serializer_class = UserProfileSerializer
