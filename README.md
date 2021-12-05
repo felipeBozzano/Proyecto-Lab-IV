@@ -23,8 +23,10 @@ $ python3 manage.py loaddata fixtures/fixture.json
 $ python manage.py runserver
 ```
 
+***
 ## DER
 ![DER MyUBP](https://github.com/felipeBozzano/Proyecto-Lab-IV/blob/dev/myubp/assets/ERD.jpeg)
+***
 
 ## Users
 * __*ROOT*__
@@ -44,10 +46,19 @@ $ python manage.py runserver
   * __*Benjamin*__
     * user_name: benjamin@test.com
     * password: test1234
-  
+****
+    
 ## Postman Collection
 * ### Import the following collection: [MYUBP-POSTMAN-COLLECTION](https://github.com/felipeBozzano/Proyecto-Lab-IV/blob/dev/myubp/postman/MyUBP.postman_collection.json)
 * ### Import the following environment: [MYUBP-LOCAL-ENVIRONMENT](https://github.com/felipeBozzano/Proyecto-Lab-IV/blob/dev/myubp/postman/Local.postman_environment.json)
+****
+
+# API DOCUMENTATION
+  * Firts you need to have your server running
+  * Then visit the following link: http://127.0.0.1:8000/api/v1/doc
+
+****
+
 
 # HOW TO START DOCKER CONTAINERS
 ```
@@ -57,10 +68,17 @@ $ python manage.py runserver
   $ python manage.py migrate
   $ python manage.py loaddata fixtures/fixture.json
 ```
+****
 
 ## Generate fixture from data base
 ```
   $ python manage.py dumpdata app.model_name
+```
+****
+
+## How to run test
+```
+  $ python manage.py test app.tests.testCaseName
 ```
 
 
