@@ -91,7 +91,6 @@ class NoteTest(TestCase):
                                                         "id_subject": 1,
                                                         "exam_note": 9
                                                     }, HTTP_AUTHORIZATION=self.token, content_type="application/json")
-        print("updated: ", updated)
 
         updated_note = self.browser.get('/api/notes/1/',  content_type="application/json")
 
