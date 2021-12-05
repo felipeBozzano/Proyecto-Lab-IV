@@ -6,6 +6,8 @@ from correlatives.serializers import CorrelativeSerializer
 from correlatives.models import Correlative
 from users_degrees.models import UserDegree
 from subjects.models import Subject
+from rest_framework.response import Response
+from rest_framework import status
 
 
 class CorrelativeViewSet(viewsets.ModelViewSet):
@@ -52,3 +54,13 @@ class CorrelativeViewSet(viewsets.ModelViewSet):
 
             return all_correlatives
         return Correlative.objects.all()
+
+    def create(self, request, *args, **kwargs):
+        id_subject = request.data["id_subject"]
+        subject = Subject.objects.get(id=id_subject)
+        correlative_subject = request.data["correlative_subject"]
+        correlative = Subject.objects.get(id=correlative_subject)
+
+        Correlative.objects.create(id_subject=subject, correlative_subject=correlative).save()
+
+        return Response(status=status.HTTP_200_OK, data={"Status": "OK", "Message": "Correlative inserted"})

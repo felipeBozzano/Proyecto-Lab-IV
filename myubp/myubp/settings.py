@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'myubp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myubp',
-        'USER': 'francisco',
-        'PASSWORD': 'r00t',
-        'HOST': 'localhost',
+        'NAME': 'myubp_db',
+        'USER': 'myubp',
+        'PASSWORD': 'myubp123',
+        'HOST': 'db',
         'PORT': '5432'
     }
 }
