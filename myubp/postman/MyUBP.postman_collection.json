@@ -166,7 +166,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"bautista@test.com\",\n    \"password\": \"test1234\"\n}",
+							"raw": "{\n    \"username\": {{test_user}},\n    \"password\": {{test_pass}}\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -228,7 +228,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Ingenieria Informatica\"\n}",
+							"raw": "    {\n        \"name\": \"Ingenieria Informatica\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -450,7 +450,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_user\": 4,\n    \"id_degree\": 1\n}",
+							"raw": "{\n    \"id_user\": 6,\n    \"id_degree\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -722,7 +722,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_user\": 2,\n    \"id_subject\": 5,\n    \"exam_note\": 6\n}",
+							"raw": "{\n    \"id_user\": 6,\n    \"id_subject\": 19,\n    \"exam_note\": 6\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -793,13 +793,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/notes/5",
+							"raw": "{{url}}/notes/17",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"notes",
-								"5"
+								"17"
 							]
 						}
 					},
@@ -843,7 +843,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"id_user\": 2,\n    \"id_subject\": 3,\n    \"exam_note\": 7\n}",
+							"raw": "{\n    \"id\": 17,\n    \"id_user\": 6,\n    \"id_subject\": 19,\n    \"exam_note\": 9\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -851,13 +851,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/notes/1/",
+							"raw": "{{url}}/notes/17/",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"notes",
-								"1",
+								"17",
 								""
 							]
 						}
@@ -906,7 +906,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_subject\": 8,\n    \"correlative_subject\": 9\n}",
+							"raw": "{\n    \"id_subject\": 30,\n    \"correlative_subject\": 35\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -914,12 +914,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/notes/",
+							"raw": "{{url}}/correlatives/",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"notes",
+								"correlatives",
 								""
 							]
 						}

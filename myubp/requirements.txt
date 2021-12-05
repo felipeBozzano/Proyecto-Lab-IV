@@ -40,5 +40,5 @@ sqlparse==0.4.1
 toml==0.10.2
 urllib3==1.25.8
 webencodings==0.5.1
-coreapi
-pyyaml
+coreapi==2.3.3
+pyyaml==6.0
