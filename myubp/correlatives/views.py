@@ -12,11 +12,11 @@ class CorrelativeViewSet(viewsets.ModelViewSet):
     """
     list:
     ### All correlatives:
-     ***List all user's degrees correlatives***
+    ***List all user's degrees correlatives***
 
     create:
     ### New Correlative:
-     ***Only the super user can create a new Correlative
+    ***Only the super user can create a new Correlative
     To create a new Degree you need the following body:***
 
     ```

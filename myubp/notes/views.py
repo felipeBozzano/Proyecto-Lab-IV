@@ -19,17 +19,17 @@ class NoteViewSet(viewsets.ModelViewSet):
 
     create:
     ## Add Note
-    ****Allows the user to add notes to the subjects of his degrees. The user is not allowed to add notes
-     to degree's subjects in which he does not belong.
-     To create a new note you will need the following body: ****
+    ***Allows the user to add notes to the subjects of his degrees. The user is not allowed to add notes to degree's subjects in which he does not belong.***
 
-     ```
+    ***To create a new note you will need the following body:***
+
+    ```
         {
             "id_user": 2,
             "id_subject": 5,
             "exam_note": 6
         }
-     ```
+    ```
     """
     queryset = Note.objects.all()
     serializer_class = NoteSerializer

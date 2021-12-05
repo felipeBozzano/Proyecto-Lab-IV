@@ -8,15 +8,15 @@ from users_degrees.models import UserDegree
 
 class UserDegreeViewSet(viewsets.ModelViewSet):
     """
-    # UserDegree API
     list:
     ## All UserDegree
     ***If the logged user is superuser then list al UserDegree. Otherwise list logged user's UserDegree***
 
     create:
     ## Create UserDegree
-    ***Allows to create a new UserDegree.
-    You will need the following body: ***
+    ***Allows to create a new UserDegree.***
+
+    ***You will need the following body:***
 
     ```
         {

@@ -16,6 +16,7 @@ class SubjectViewSet(viewsets.ModelViewSet):
     create:
     ## Add Subject
     ***Only the super user can create a new Subject.***
+
     ***To create a new Subject you need the following body: ***
 
     ```
