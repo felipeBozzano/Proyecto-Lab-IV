@@ -17,6 +17,6 @@ services:
     env_file:
       - ./.dockerenv.dev
     volumes:
-      - .postgres_data:/var/lib/postgresql/data/
+      - .postgres_data:/var/lib/postgresql/data
     ports:
       - 5632:5432

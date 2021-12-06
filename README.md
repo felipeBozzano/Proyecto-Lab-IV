@@ -64,7 +64,7 @@ $ python manage.py runserver
 ```
   $ docker-compose build
   $ docker-compose up
-  $ docker exec -it myubp_web_1 /bin/bash
+  $ docker exec -it myubp-web-1 /bin/bash
   $ python manage.py migrate
   $ python manage.py loaddata fixtures/fixture.json
 ```
@@ -78,10 +78,17 @@ $ python manage.py runserver
 
 ## How to run test
 ```
-  $ python manage.py test app.tests.testCaseName
+  $ python manage.py test users.tests
+  $ python manage.py test degrees.tests 
+  $ python manage.py test users_degrees.tests 
+  $ python manage.py test subjects.tests 
+  $ python manage.py test correlatives.tests 
+  $ python manage.py test notes.tests.NoteTest.test_update_exam_note 
+  $ python manage.py test notes.tests.NoteTest.test_get_avg_note 
 ```
 
-
-  
-
-
+## How to start/stop postgresql service
+```
+  $ sudo service postgresql start
+  $ sudo service postgresql stop
+```

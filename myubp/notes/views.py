@@ -88,6 +88,6 @@ class AvgNoteViewSet(viewsets.ModelViewSet):
         user = self.request.user
         print("user: ", user)
         if not user.is_superuser:
-            return Note.objects.select_related('subjects').filter(id_user_id=user).values('id_user_id') \
+            return Note.objects.filter(id_user_id=user).values('id_user_id') \
                 .annotate(_average_note=Avg('exam_note'))
-        return Note.objects.all().values('id_user_id', 'id_degree_id').annotate(_average_note=Avg('exam_note'))
+        return Note.objects.all().values('id_user_id',).annotate(_average_note=Avg('exam_note'))

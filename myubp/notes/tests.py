@@ -54,7 +54,8 @@ class NoteTest(TestCase):
 
         """Create a new UserDegree"""
         self.new_user_degree = self.browser.post('/api/users_degrees/', {'id_user': 2,
-                                                                         'id_degree': 1}, HTTP_AUTHORIZATION=token)
+                                                                         'id_degree': 1}, HTTP_AUTHORIZATION=self.token,
+                                                 content_type="application/json")
 
         '''Add Notes to both new subjects'''
         self.browser.post('/api/notes/', {
@@ -108,7 +109,7 @@ class NoteTest(TestCase):
         self.assertEqual(updated_subject_id, self.new_exam_note_subject_id)
         self.assertEqual(updated_user_id, self.new_exam_note_user_id)
 
-    def test_update_exam_note(self):
+    def test_get_avg_note(self):
         """Get exam notes average"""
 
         avg_note = self.browser.get('/api/notes-avg/',  content_type="application/json")
