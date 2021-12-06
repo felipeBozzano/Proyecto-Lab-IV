@@ -64,7 +64,7 @@ $ python manage.py runserver
 ```
   $ docker-compose build
   $ docker-compose up
-  $ docker exec -it myubp-web-1 /bin/bash
+  $ docker exec -it myubp_web_1 /bin/bash
   $ python manage.py migrate
   $ python manage.py loaddata fixtures/fixture.json
 ```
